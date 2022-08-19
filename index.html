@@ -57,24 +57,30 @@
                 <div class="parentDiv">
                     <div>
                         <label for="Password">password</label>
-                        <input type="password" required>
-                        <span id="msgPassword">*Passwords do not match</span>
+                        <input type="password" id="userPassword" required>
+                        <span id="msgPassword"></span>
                     </div>
                     <div>
                         <label for="conPassword">Confirm password</label>
-                        <input type="password" required>
+                        <input type="password" id="userconfirmPassword" required>
                     </div>
                 </div>
             </form>
             <div id="btn">
-                <button>Create Account</button>
+                <button id="btnImp">Create Account</button>
                 <p>Already have an account? <a href="#">log in</a></p>
             </div>
         </div>
     </section>
 </body>
 <script>
-
+    document.getElementById('btnImp').addEventListener('click', ()=>{
+        if(document.getElementById('userPassword').value !== document.getElementById('userconfirmPassword').value){
+            document.getElementById('msgPassword').textContent = '*Passwords do not match'
+        }else{
+            alert('congrats')
+        }
+    })
 </script>
 
 </html>
