@@ -1,18 +1,167 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
-    background-color: white;
+
+body {
+    background-color: rgb(222, 222, 222);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
 }
-#imgBg{
+
+#imgBg {
     background-image: url(img/img1.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     height: 100vh;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+}
+
+#imgBg div {
+    background-color: rgba(10, 10, 10, 0.534);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: aliceblue;
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 50px;
+}
+
+#imgBg img {
+    max-width: 70px;
+}
+
+#secondSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#para {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-left: 50px;
+}
+
+#secondText {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+form {
+    background-color: white;
+    padding: 10px;
+    padding-left: 50px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.511);
+}
+
+form h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+form .parentDiv {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+form label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input {
+    display: block;
+    width: 200px;
+    border: 3px solid #E5E7EB;
+    height: 20px;
+    border-radius: 4px;
+}
+
+input:required:invalid {
+    border: 2px solid red;
+}
+
+input:focus {
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.758);
+}
+
+#msgPassword {
+    color: red;
+    font-size: 10px;
+}
+
+#btn {
+    padding: 10px;
+    padding-left: 50px;
+}
+
+button {
+    background-color: #596D48;
+    border: none;
+    width: 200px;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.541);
+    color: white;
+    font-size: 1.0rem;
+}
+
+#btn p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#btn a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+@media screen and (max-width:607px) {
+    body {
+        display: block;
+    }
+
+    #imgBg {
+        height: 200px;
+    }
+
+    #imgBg div {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:500px) {
+    form .parentDiv {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    #para {
+        font-size: 13px;
+        padding: 4px;
+    }
+    input{
+        margin-top: 8px;
+    }
+    label{
+        margin-top: 5px;
+    }
+    form {
+        padding: 6px;
+    }
 }

@@ -1,22 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Rubik+Dirt&family=Rubik+Marker+Hatch&display=swap"
+        rel="stylesheet">
     <title>SIGN-UP</title>
 </head>
+
 <body>
     <section id="imgBg">
         <div>
             <img src="img/odin-lined.png" alt="odin logo Img">
+            <h1>odin</h1>
         </div>
     </section>
-    <section id="form">
-        <h3>
-            This is not a real online service! 
-        </h3>
+    <section id="secondSec">
+        <div id="contain">
+            <div id="para">
+                <h3>
+                    This is not a real online service!
+                    You know you need something like this and your
+                    life help you realise your deepest dreams. <br>
+                    sign up to get started.
+                </h3>
+                <h3 id="secondText">You know what you want to.</h3>
+            </div>
+            <form action="">
+                <h1>Lets do this!</h1>
+                <div class="parentDiv">
+                    <div>
+                        <label for="Fname">First Name</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="lname">last Name</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="parentDiv">
+                    <div>
+                        <label for="Email">Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="lname">Phone number</label>
+                        <input type="tel">
+                    </div>
+                </div>
+                <div class="parentDiv">
+                    <div>
+                        <label for="Password">password</label>
+                        <input type="password" required>
+                        <span id="msgPassword">*Passwords do not match</span>
+                    </div>
+                    <div>
+                        <label for="conPassword">Confirm password</label>
+                        <input type="password" required>
+                    </div>
+                </div>
+            </form>
+            <div id="btn">
+                <button>Create Account</button>
+                <p>Already have an account? <a href="#">log in</a></p>
+            </div>
+        </div>
     </section>
 </body>
+<script>
+
+</script>
+
 </html>
